@@ -9,10 +9,10 @@ import {
    jobit,
    tripguide,
    // Services
-   web,
-   mobile,
    backend,
-   creator,
+   mobile,
+   program,
+   web,
    // Technologies
    css,
    docker,
@@ -179,8 +179,8 @@ const services = [
       icon: backend,
    },
    {
-      title: "Content Creator",
-      icon: creator,
+      title: "App Developer",
+      icon: program,
    },
 ]
 
