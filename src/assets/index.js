@@ -10,7 +10,7 @@ import starbucks from './company/starbucks.png'
 import tesla from './company/tesla.png'
 // Services
 import backend from './services/backend.png'
-import creator from './services/creator.png'
+import program from './services/program.png'
 import mobile from './services/mobile.png'
 import web from './services/web.png'
 // Technologies
@@ -45,7 +45,7 @@ export {
    tesla,
    // Services
    backend,
-   creator,
+   program,
    mobile,
    web,
    // Technologies
