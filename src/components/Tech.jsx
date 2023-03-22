@@ -1,9 +1,16 @@
-import React from 'react'
+import { BallCanvas } from './canvas'
+import { technologies } from '../constants'
 
-const Tech = () => {
-  return (
-    <div>Tech</div>
-  )
-}
+import { SectionWrapper } from '../hoc'
 
-export default Tech
+const Tech = () => (
+   <div className='flex flex-row flex-wrap justify-center gap-10'>
+      {technologies.map((technology, index) => (
+         <div className='h-28 w-28' key={technology.name}>
+            <BallCanvas icon={technology.icon} />
+         </div>
+      ))}
+   </div>
+)
+
+export default SectionWrapper(Tech, '')
