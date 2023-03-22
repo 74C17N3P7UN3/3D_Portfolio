@@ -4,18 +4,16 @@ import github from './github.png'
 import logo from './logo.png'
 import menu from './menu.svg'
 // Experiences
-import meta from './company/meta.png'
-import shopify from './company/shopify.png'
-import starbucks from './company/starbucks.png'
-import tesla from './company/tesla.png'
 // Services
 import backend from './services/backend.png'
 import program from './services/program.png'
 import mobile from './services/mobile.png'
 import web from './services/web.png'
 // Technologies
+import cpp from './tech/cpp.png'
 import css from './tech/css.png'
 import docker from './tech/docker.png'
+import expo from './tech/expo.png'
 import figma from './tech/figma.png'
 import git from './tech/git.png'
 import html from './tech/html.png'
@@ -39,18 +37,16 @@ export {
    logo,
    menu,
    // Experiences
-   meta,
-   shopify,
-   starbucks,
-   tesla,
    // Services
    backend,
    program,
    mobile,
    web,
    // Technologies
+   cpp,
    css,
    docker,
+   expo,
    figma,
    git,
    html,

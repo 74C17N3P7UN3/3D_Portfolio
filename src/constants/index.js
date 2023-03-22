@@ -1,9 +1,5 @@
 import {
    // Experiences
-   meta,
-   shopify,
-   starbucks,
-   tesla,
    // Projects
    carrent,
    jobit,
@@ -14,8 +10,10 @@ import {
    program,
    web,
    // Technologies
+   cpp,
    css,
    docker,
+   expo,
    figma,
    git,
    html,
