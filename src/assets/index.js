@@ -12,19 +12,18 @@ import web from './services/web.png'
 // Technologies
 import cpp from './tech/cpp.png'
 import css from './tech/css.png'
-import docker from './tech/docker.png'
 import expo from './tech/expo.png'
-import figma from './tech/figma.png'
 import git from './tech/git.png'
+import github_black from './tech/github_black.png'
 import html from './tech/html.png'
+import java from './tech/java.png'
 import javascript from './tech/javascript.png'
-import mongodb from './tech/mongodb.png'
 import nodejs from './tech/nodejs.png'
+import php from './tech/php.png'
+import python from './tech/python.png'
 import reactjs from './tech/reactjs.png'
-import redux from './tech/redux.png'
 import tailwind from './tech/tailwind.png'
-import threejs from './tech/threejs.svg'
-import typescript from './tech/typescript.png'
+import threejs from './tech/threejs.png'
 // Projects
 import carrent from './projects/carrent.png'
 import jobit from './projects/jobit.png'
@@ -45,19 +44,18 @@ export {
    // Technologies
    cpp,
    css,
-   docker,
    expo,
-   figma,
    git,
+   github_black,
    html,
+   java,
    javascript,
-   mongodb,
+   php,
+   python,
    nodejs,
    reactjs,
-   redux,
    tailwind,
    threejs,
-   typescript,
    // Projects
    carrent,
    jobit,

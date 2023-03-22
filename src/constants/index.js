@@ -12,19 +12,18 @@ import {
    // Technologies
    cpp,
    css,
-   docker,
    expo,
-   figma,
    git,
+   github_black,
    html,
+   java,
    javascript,
-   mongodb,
+   php,
+   python,
    nodejs,
    reactjs,
-   redux,
    tailwind,
    threejs,
-   typescript
 } from '../assets'
 
 const experiences = [
@@ -194,16 +193,16 @@ const technologies = [
       icon: javascript,
    },
    {
-      name: "TypeScript",
-      icon: typescript,
+      name: "PHP",
+      icon: php,
    },
    {
       name: "React JS",
       icon: reactjs,
    },
    {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Expo",
+      icon: expo,
    },
    {
       name: "Tailwind CSS",
@@ -214,24 +213,28 @@ const technologies = [
       icon: nodejs,
    },
    {
-      name: "MongoDB",
-      icon: mongodb,
-   },
-   {
       name: "Three JS",
       icon: threejs,
    },
    {
-      name: "git",
+      name: "C++",
+      icon: cpp,
+   },
+   {
+      name: "Python",
+      icon: python,
+   },
+   {
+      name: "Java",
+      icon: java,
+   },
+   {
+      name: "Git",
       icon: git,
    },
    {
-      name: "figma",
-      icon: figma,
-   },
-   {
-      name: "docker",
-      icon: docker,
+      name: "GitHub",
+      icon: github_black,
    },
 ]
 
