@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
+
 import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({ title, index, icon }) => (
@@ -48,7 +49,7 @@ const About = () => (
          Wanna talk? <a href="#contact" className='hover:text-white border-b border-b-secondary transition'>Let's chat!</a>
       </motion.p>
 
-      <div className='flex flex-wrap justify-center gap-10 mt-20'>
+      <div className='flex flex-row flex-wrap justify-center gap-10 mt-20'>
          {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
          ))}
