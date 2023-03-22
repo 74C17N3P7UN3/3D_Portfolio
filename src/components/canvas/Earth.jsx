@@ -1,9 +1,7 @@
 import React from 'react'
 
-const Earth = () => {
-  return (
-    <div>Earth</div>
-  )
-}
+const Earth = () => (
+   <div>Earth</div>
+)
 
 export default Earth
