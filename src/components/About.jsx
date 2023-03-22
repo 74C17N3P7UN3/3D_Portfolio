@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
+
 import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({ title, index, icon }) => (
@@ -38,18 +39,17 @@ const About = () => (
          variants={fadeIn('', '', 0.1, 1)}
          className='max-w-3xl mt-4 text-secondary text-[17px] leading-[30px]'
       >
-         I'm a skilled software developer with
-         experience in TypeScript and JavaScript,
-         and expertise in frameworks like React,
-         Node.js, and Three.js. I'm a quick learner
-         and collaborate closely with clients to
-         create efficient, scalable, and
-         user-friendly solutions that solve
-         real-world problems. Let's work together
-         to bring your ideas to life!
+         I'm a skilled software developer with experience
+         in JavaScript and expertise in frameworks like
+         React, Node.js and Three.js. While I'm more
+         passionate about web development, I have also
+         experience with C, Python and Java. I'm a quick
+         learner who always aims to create efficient,
+         scalable, and user-friendly solutions. <br />
+         Wanna talk? <a href="#contact" className='hover:text-white border-b border-b-secondary transition'>Let's chat!</a>
       </motion.p>
 
-      <div className='flex flex-wrap justify-center gap-10 mt-20'>
+      <div className='flex flex-row flex-wrap justify-center gap-10 mt-20'>
          {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
          ))}

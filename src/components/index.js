@@ -1,6 +1,6 @@
 import {
    BallCanvas,
-   ComputersCanvas,
+   ComputerCanvas,
    EarthCanvas,
    StarsCanvas
 } from './canvas'
@@ -16,7 +16,7 @@ import Works from './Works'
 
 export {
    BallCanvas,
-   ComputersCanvas,
+   ComputerCanvas,
    EarthCanvas,
    StarsCanvas,
 

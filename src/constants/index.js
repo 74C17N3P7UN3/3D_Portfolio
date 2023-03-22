@@ -1,9 +1,5 @@
 import {
    // Experiences
-   meta,
-   shopify,
-   starbucks,
-   tesla,
    // Projects
    carrent,
    jobit,
@@ -14,72 +10,71 @@ import {
    program,
    web,
    // Technologies
+   cpp,
    css,
-   docker,
-   figma,
+   expo,
    git,
+   github_black,
    html,
+   java,
    javascript,
-   mongodb,
+   php,
+   python,
    nodejs,
    reactjs,
-   redux,
    tailwind,
    threejs,
-   typescript
 } from '../assets'
 
 const experiences = [
    {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "C/C++ Developer",
+      company_name: "@school",
+      icon: cpp,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "October 2020 - June 2022",
       points: [
-         "Developing and maintaining web applications using React.js and other related technologies.",
-         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-         "Implementing responsive design and ensuring cross-browser compatibility.",
-         "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-   },
-   {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-         "Developing and maintaining web applications using React.js and other related technologies.",
-         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-         "Implementing responsive design and ensuring cross-browser compatibility.",
-         "Participating in code reviews and providing constructive feedback to other developers.",
+         "Learning the vary basics of low-level programming in C/C++.",
+         "Collaborating with schoolmates on two real-life projects.",
+         "Using my knowledge to write clean and understandable code.",
+         "Participating in coding contests and tutoring.",
       ],
    },
    {
       title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      company_name: "@school",
+      icon: html,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Sep 2021 - Dec 2022",
       points: [
-         "Developing and maintaining web applications using React.js and other related technologies.",
-         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-         "Implementing responsive design and ensuring cross-browser compatibility.",
-         "Participating in code reviews and providing constructive feedback to other developers.",
+         "Learning the very basics of web development with HTML, CSS and later JS.",
+         "Creating simple projects to solve real-life problems.",
+         "Learning server-side requests handling with PHP and MySQL async calls.",
+         "Shipping a mailing website built by myself as a personal project.",
       ],
    },
    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "React.js Developer",
+      company_name: "@home",
+      icon: reactjs,
+      iconBg: "#383E56",
+      date: "Oct 2022 - Present",
       points: [
-         "Developing and maintaining web applications using React.js and other related technologies.",
-         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+         "Self-learning to develop web applications using React.js and related technologies.",
+         "Learning to divide into simple step a complex design and trying to recreate it.",
          "Implementing responsive design and ensuring cross-browser compatibility.",
-         "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+   },
+   {
+      title: "React Native Developer",
+      company_name: "@home",
+      icon: expo,
+      iconBg: "#383E56",
+      date: "March 2023 - Present",
+      points: [
+         "My latest entry. As I got passionate about React.js, I also started learning React Native.",
+         "I want to achieve a good understanding of mobile devices native components and learn how to ship fast and responsive applications.",
+         "Using modern technologies like Expo® to build projects that run natively on every device.",
       ],
    },
 ]
@@ -198,16 +193,16 @@ const technologies = [
       icon: javascript,
    },
    {
-      name: "TypeScript",
-      icon: typescript,
+      name: "PHP",
+      icon: php,
    },
    {
       name: "React JS",
       icon: reactjs,
    },
    {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Expo",
+      icon: expo,
    },
    {
       name: "Tailwind CSS",
@@ -218,24 +213,28 @@ const technologies = [
       icon: nodejs,
    },
    {
-      name: "MongoDB",
-      icon: mongodb,
-   },
-   {
       name: "Three JS",
       icon: threejs,
    },
    {
-      name: "git",
+      name: "C++",
+      icon: cpp,
+   },
+   {
+      name: "Python",
+      icon: python,
+   },
+   {
+      name: "Java",
+      icon: java,
+   },
+   {
+      name: "Git",
       icon: git,
    },
    {
-      name: "figma",
-      icon: figma,
-   },
-   {
-      name: "docker",
-      icon: docker,
+      name: "GitHub",
+      icon: github_black,
    },
 ]
 

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas'
+import { ComputerCanvas } from './canvas'
 
 const Hero = () => (
    <section className='relative h-screen w-full mx-auto'>
@@ -22,7 +22,7 @@ const Hero = () => (
          </div>
       </div>
 
-      <ComputersCanvas />
+      <ComputerCanvas />
 
       <div className='absolute bottom-10 flex items-center justify-center w-full'>
          <a href="#about">
