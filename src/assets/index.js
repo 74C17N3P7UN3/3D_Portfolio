@@ -1,6 +1,5 @@
 // Other
 import close from './close.svg'
-import github from './github.png'
 import logo from './logo.png'
 import menu from './menu.svg'
 // Experiences
@@ -15,9 +14,11 @@ import css from './tech/css.png'
 import expo from './tech/expo.png'
 import git from './tech/git.png'
 import github_black from './tech/github_black.png'
+import github_white from './tech/github_white.png'
 import html from './tech/html.png'
 import java from './tech/java.png'
 import javascript from './tech/javascript.png'
+import netlify from './tech/netlify.png'
 import nodejs from './tech/nodejs.png'
 import php from './tech/php.png'
 import python from './tech/python.png'
@@ -25,14 +26,13 @@ import reactjs from './tech/reactjs.png'
 import tailwind from './tech/tailwind.png'
 import threejs from './tech/threejs.png'
 // Projects
-import carrent from './projects/carrent.png'
-import jobit from './projects/jobit.png'
-import tripguide from './projects/tripguide.png'
+import crowdfunding from './projects/crowdfunding.png'
+import metaversus from './projects/metaversus.png'
+import hoobank from './projects/hoobank.png'
 
 export {
    // Other
    close,
-   github,
    logo,
    menu,
    // Experiences
@@ -47,9 +47,11 @@ export {
    expo,
    git,
    github_black,
+   github_white,
    html,
    java,
    javascript,
+   netlify,
    php,
    python,
    nodejs,
@@ -57,7 +59,7 @@ export {
    tailwind,
    threejs,
    // Projects
-   carrent,
-   jobit,
-   tripguide,
+   crowdfunding,
+   metaversus,
+   hoobank,
 }
