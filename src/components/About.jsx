@@ -46,7 +46,7 @@ const About = () => (
          experience with C, Python and Java. I'm a quick
          learner who always aims to create efficient,
          scalable, and user-friendly solutions. <br />
-         Wanna talk? <a href="#contact" className='hover:text-white border-b border-b-secondary transition'>Let's chat!</a>
+         Wanna talk? <a href='#contact' className='hover:text-white border-b border-b-secondary transition'>Let's chat!</a>
       </motion.p>
 
       <div className='flex flex-row flex-wrap justify-center gap-10 mt-20'>

@@ -16,7 +16,7 @@ const Navbar = () => {
                to='/'
                className='flex items-center gap-2'
                onClick={() => {
-                  setActive("");
+                  setActive('');
                   window.scrollTo(0, 0)
                }}
             >
@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className='md:hidden flex flex-1 items-center justify-end'>
                <img
                   src={toggle ? close : menu}
-                  alt="Menu"
+                  alt='Menu'
                   className='h-[28px] w-[28px] object-contain cursor-pointer'
                   onClick={() => setToggle((prev) => !prev)}
                />
