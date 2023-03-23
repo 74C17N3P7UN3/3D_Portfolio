@@ -1,9 +1,9 @@
 import {
    // Experiences
    // Projects
-   carrent,
-   jobit,
-   tripguide,
+   crowdfunding,
+   metaversus,
+   hoobank,
    // Services
    backend,
    mobile,
@@ -32,7 +32,7 @@ const experiences = [
       company_name: "@school",
       icon: cpp,
       iconBg: "#383E56",
-      date: "October 2020 - June 2022",
+      date: "Oct 2020 - Jun 2022",
       points: [
          "Learning the vary basics of low-level programming in C/C++.",
          "Collaborating with schoolmates on two real-life projects.",
@@ -70,7 +70,7 @@ const experiences = [
       company_name: "@home",
       icon: expo,
       iconBg: "#383E56",
-      date: "March 2023 - Present",
+      date: "Mar 2023 - Present",
       points: [
          "My latest entry. As I got passionate about React.js, I also started learning React Native.",
          "I want to achieve a good understanding of mobile devices native components and learn how to ship fast and responsive applications.",
@@ -96,16 +96,16 @@ export const navLinks = [
 
 const projects = [
    {
-      name: "Car Rent",
+      name: "Crowdfunding",
       description:
-         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+         "Web3 platform that allows users to create and fund various user-created campaigns, providing a simple and intuitive UI for users to link their crypto-wallet.",
       tags: [
          {
             name: "react",
             color: "blue-text-gradient",
          },
          {
-            name: "mongodb",
+            name: "solidity",
             color: "green-text-gradient",
          },
          {
@@ -113,50 +113,53 @@ const projects = [
             color: "pink-text-gradient",
          },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: crowdfunding,
+      deploy: "https://crowdfunding-tacitneptune.netlify.app/",
+      source: "https://github.com/74C17N3P7UN3/CrowdFunding/",
    },
    {
-      name: "Job IT",
+      name: "Metaversus",
       description:
-         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+         "Web application that introduces the users to Metaversus' offers about the metaverse. Slowly animates on scroll and makes up for an engaging user-experience.",
       tags: [
          {
             name: "react",
             color: "blue-text-gradient",
          },
          {
-            name: "restapi",
+            name: "nextjs",
             color: "green-text-gradient",
          },
          {
-            name: "scss",
+            name: "tailwind",
             color: "pink-text-gradient",
          },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: metaversus,
+      deploy: "https://metaversus-tacitneptune.netlify.app/",
+      source: "https://github.com/74C17N3P7UN3/Metaversus/",
    },
    {
-      name: "Trip Guide",
+      name: "HooBank",
       description:
-         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+         "A modern looking website to showcase the products HooBank has to offer. This website is inspired by a figma design published on OneWeekWonders.",
       tags: [
          {
-            name: "nextjs",
+            name: "react",
             color: "blue-text-gradient",
          },
          {
-            name: "supabase",
+            name: "figma",
             color: "green-text-gradient",
          },
          {
-            name: "css",
+            name: "tailwind",
             color: "pink-text-gradient",
          },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: hoobank,
+      deploy: "https://modern-bank-tacitneptune.netlify.app/",
+      source: "https://github.com/74C17N3P7UN3/ModernBank/",
    },
 ]
 
