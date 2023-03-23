@@ -34,13 +34,13 @@ const ProjectCard = ({
                   onClick={() => window.open(deploy, '_blank')}
                   className='flex items-center justify-center h-10 w-10 rounded-full black-gradient hover:border-2 hover:border-teal-600 transition-all duration-75 cursor-pointer'
                >
-                  <img src={netlify} alt="netlify" className='h-1/2 w-1/2 object-contain' />
+                  <img src={netlify} alt='netlify' className='h-1/2 w-1/2 object-contain' />
                </div>
                <div
                   onClick={() => window.open(source, '_blank')}
                   className='flex items-center justify-center h-10 w-10 rounded-full black-gradient hover:border-2 hover:border-white transition-all duration-75 cursor-pointer'
                >
-                  <img src={github_white} alt="github" className='h-1/2 w-1/2 object-contain' />
+                  <img src={github_white} alt='github' className='h-1/2 w-1/2 object-contain' />
                </div>
             </div>
          </div>
