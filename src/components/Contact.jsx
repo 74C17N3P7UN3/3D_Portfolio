@@ -16,6 +16,7 @@ const Contact = () => {
       email: '',
       message: '',
    })
+
    const [loading, setLoading] = useState(false)
 
    const handleChange = (e) => {
@@ -38,21 +39,23 @@ const Contact = () => {
             message: form.message,
          },
          import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-      )
-         .then(() => {
-            setLoading(false)
-            alert('Thank you. I will reach back to you as soon as possible.')
+      ).then(() => {
+         // TODO: Move alerts to submit button w/ states
 
-            setForm({
-               name: '',
-               email: '',
-               message: '',
-            })
-         }, (error) => {
-            setLoading(false)
-            console.log(error)
-            alert('Something went wrong.')
+         setLoading(false)
+         setForm({
+            name: '',
+            email: '',
+            message: '',
          })
+
+         alert('Thank you. I will reach back to you as soon as possible.')
+      }, (error) => {
+         setLoading(false)
+         console.log(error)
+
+         alert('Ahh, something went wrong. Please try again.')
+      })
    }
 
    return (
@@ -104,7 +107,7 @@ const Contact = () => {
                </label>
 
                <button
-                  type="submit"
+                  type='submit'
                   className='outline-none w-fit px-8 py-3 font-bold text-white rounded-xl shadow-md shadow-primary bg-tertiary'
                >
                   {loading ? 'Sending...' : 'Send'}
