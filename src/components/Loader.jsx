@@ -4,14 +4,23 @@ const Loader = () => {
    const { progress } = useProgress()
 
    return (
-      <Html>
+      <Html
+         as='div'
+         center
+         style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+         }}
+      >
          <span className='canvas-loader'></span>
          <p
             style={{
                fontSize: 14,
                color: '#f1f1f1',
                fontWeight: 800,
-               marginTop: 40
+               marginTop: 40,
             }}
          >
             {progress.toFixed(2)}%
