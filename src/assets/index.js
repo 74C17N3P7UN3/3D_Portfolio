@@ -13,8 +13,7 @@ import cpp from './tech/cpp.png'
 import css from './tech/css.png'
 import expo from './tech/expo.png'
 import git from './tech/git.png'
-import github_black from './tech/github_black.png'
-import github_white from './tech/github_white.png'
+import github from './tech/github.png'
 import html from './tech/html.png'
 import java from './tech/java.png'
 import javascript from './tech/javascript.png'
@@ -46,8 +45,7 @@ export {
    css,
    expo,
    git,
-   github_black,
-   github_white,
+   github,
    html,
    java,
    javascript,

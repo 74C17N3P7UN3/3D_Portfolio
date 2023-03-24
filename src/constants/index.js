@@ -14,7 +14,6 @@ import {
    css,
    expo,
    git,
-   github_black,
    html,
    java,
    javascript,
@@ -234,10 +233,6 @@ const technologies = [
    {
       name: "Git",
       icon: git,
-   },
-   {
-      name: "GitHub",
-      icon: github_black,
    },
 ]
 

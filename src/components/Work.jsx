@@ -2,7 +2,7 @@ import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-import { github_white, netlify } from '../assets'
+import { github, netlify } from '../assets'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
@@ -39,7 +39,7 @@ const ProjectCard = ({
                   onClick={() => window.open(source, '_blank')}
                   className='flex items-center justify-center h-10 w-10 rounded-full black-gradient hover:border-2 hover:border-white transition-all duration-75 cursor-pointer'
                >
-                  <img src={github_white} alt='github' className='h-1/2 w-1/2 object-contain' />
+                  <img src={github} alt='github' className='h-1/2 w-1/2 object-contain' />
                </div>
             </div>
          </div>
