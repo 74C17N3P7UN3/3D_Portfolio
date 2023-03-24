@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { styles } from '../styles'
@@ -8,15 +8,23 @@ import { close, logo, menu } from '../assets'
 const Navbar = () => {
    const [active, setActive] = useState('')
    const [toggle, setToggle] = useState(false)
+   const [scrolled, setScrolled] = useState(false)
+
+   useEffect(() => {
+      const handleScroll = () => { (window.scrollY > 0) ? setScrolled(true) : setScrolled(false) }
+
+      window.addEventListener('scroll', handleScroll)
+      return () => window.removeEventListener('scroll', handleScroll)
+   }, [])
 
    return (
-      <nav className={`${styles.paddingX} fixed top-0 flex items-center w-full py-5 z-20 bg-primary`}>
+      <nav className={`${styles.paddingX} fixed top-0 flex items-center w-full py-5 z-20 ${scrolled ? 'bg-primary' : 'bg-transparent'}`}>
          <div className='flex items-center justify-between w-full max-w-7xl mx-auto'>
             <Link
                to='/'
                className='flex items-center gap-2'
                onClick={() => {
-                  setActive('');
+                  setActive('')
                   window.scrollTo(0, 0)
                }}
             >
@@ -67,7 +75,7 @@ const Navbar = () => {
                </div>
             </div>
          </div>
-      </nav>
+      </nav >
    )
 }
 
