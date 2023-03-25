@@ -17,7 +17,7 @@ const Contact = () => {
       message: '',
    })
 
-   const [loading, setLoading] = useState(false)
+   const [formStatus, setFormStatus] = useState('Send')
 
    const handleChange = (e) => {
       const { name, value } = e.target
@@ -27,7 +27,7 @@ const Contact = () => {
 
    const handleSubmit = (e) => {
       e.preventDefault()
-      setLoading(true)
+      setFormStatus('Sending...')
 
       emailjs.send(
          import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -40,21 +40,20 @@ const Contact = () => {
          },
          import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       ).then(() => {
-         // TODO: Move alerts to submit button w/ states
-
-         setLoading(false)
          setForm({
             name: '',
             email: '',
             message: '',
          })
 
-         alert('Thank you. I will reach back to you as soon as possible.')
+         setFormStatus('Success!')
+         setTimeout(() => { setFormStatus('Send') }, 2000)
       }, (error) => {
-         setLoading(false)
-         console.log(error)
+         console.log(error + '\n\nCreate a new issue here: https://github.com/74C17N3P7UN3/My_Portfolio/issues/new?assignees=74C17N3P7UN3&labels=bug')
+         alert('Ahh, something went wrong. Please check the console.')
 
-         alert('Ahh, something went wrong. Please try again.')
+         setFormStatus('Error!')
+         setTimeout(() => { setFormStatus('Send') }, 2000)
       })
    }
 
@@ -108,9 +107,10 @@ const Contact = () => {
 
                <button
                   type='submit'
-                  className='outline-none w-fit px-8 py-3 font-bold text-white rounded-xl shadow-md shadow-primary bg-tertiary'
+                  className={`outline-none w-fit px-8 py-3 font-bold text-white rounded-xl shadow-md shadow-primary transition duration-500
+                           ${(formStatus == 'Success!') ? 'bg-green-700' : (formStatus == 'Error!') ? 'bg-red-700' : 'bg-tertiary'}`}
                >
-                  {loading ? 'Sending...' : 'Send'}
+                  {formStatus}
                </button>
             </form>
          </motion.div>
