@@ -1,6 +1,6 @@
 // Other
 import close from './close.svg'
-import logo from './logo.png'
+import logo from './logo.webp'
 import menu from './menu.svg'
 // Experiences
 // Services
@@ -25,9 +25,9 @@ import reactjs from './tech/reactjs.png'
 import tailwind from './tech/tailwind.png'
 import threejs from './tech/threejs.png'
 // Projects
-import crowdfunding from './projects/crowdfunding.png'
-import metaversus from './projects/metaversus.png'
-import hoobank from './projects/hoobank.png'
+import crowdfunding from './projects/crowdfunding.webp'
+import metaversus from './projects/metaversus.webp'
+import hoobank from './projects/hoobank.webp'
 
 export {
    // Other
