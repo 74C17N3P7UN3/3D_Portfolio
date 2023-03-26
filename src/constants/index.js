@@ -157,8 +157,8 @@ const projects = [
          },
       ],
       image: hoobank,
-      deploy: "https://modern-bank-tacitneptune.netlify.app/",
-      source: "https://github.com/74C17N3P7UN3/ModernBank/",
+      deploy: "https://hoobank-tacitneptune.netlify.app/",
+      source: "https://github.com/74C17N3P7UN3/HooBank/",
    },
 ]
 
