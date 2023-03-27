@@ -27,8 +27,15 @@ const Contact = () => {
 
    const handleSubmit = (e) => {
       e.preventDefault()
-      setFormStatus('Sending...')
 
+      if (form.name === '' || form.email === '' || form.message === '') {
+         setFormStatus('Fill the fields first!')
+         setTimeout(() => { setFormStatus('Send') }, 2000)
+
+         return
+      }
+
+      setFormStatus('Sending...')
       emailjs.send(
          import.meta.env.VITE_EMAILJS_SERVICE_ID,
          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
@@ -49,7 +56,7 @@ const Contact = () => {
          setFormStatus('Success!')
          setTimeout(() => { setFormStatus('Send') }, 2000)
       }, (error) => {
-         console.log(error + '\n\nCreate a new issue here: https://github.com/74C17N3P7UN3/My_Portfolio/issues/new?assignees=74C17N3P7UN3&labels=bug')
+         console.log(error + '\n\nCreate a new issue here: https://github.com/74C17N3P7UN3/My_Portfolio/issues/new?title=EmailJS%20Error&assignees=74C17N3P7UN3&labels=bug')
          alert('Ahh, something went wrong. Please check the console.')
 
          setFormStatus('Error!')
@@ -108,7 +115,7 @@ const Contact = () => {
                <button
                   type='submit'
                   className={`outline-none w-fit px-8 py-3 font-bold text-white rounded-xl shadow-md shadow-primary transition duration-500
-                           ${(formStatus == 'Success!') ? 'bg-green-700' : (formStatus == 'Error!') ? 'bg-red-700' : 'bg-tertiary'}`}
+                           ${(formStatus === 'Success!') ? 'bg-green-700' : (formStatus === 'Error!') ? 'bg-red-700' : 'bg-tertiary'}`}
                >
                   {formStatus}
                </button>
