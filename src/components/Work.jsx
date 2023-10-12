@@ -1,9 +1,9 @@
-import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
+import Tilt from 'react-parallax-tilt'
 
-import { styles } from '../styles'
-import { github, netlify } from '../assets'
+import { github, netlify, vercel } from '../assets'
 import { projects } from '../constants'
+import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
 
 import { SectionWrapper } from '../hoc'
@@ -33,7 +33,7 @@ const ProjectCard = ({
                   onClick={() => window.open(deploy, '_blank')}
                   className='flex items-center justify-center h-10 w-10 rounded-full black-gradient hover:border-2 hover:border-teal-600 transition-all duration-75 cursor-pointer'
                >
-                  <img src={netlify} alt='netlify' className='h-1/2 w-1/2 object-contain' />
+                  <img src={deploy.includes("vercel.app") ? vercel : netlify} alt='deploy service' className='h-1/2 w-1/2 object-contain' />
                </div>
                <div
                   onClick={() => window.open(source, '_blank')}

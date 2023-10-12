@@ -1,28 +1,28 @@
 import {
-   // Experiences
-   // Projects
-   crowdfunding,
-   metaversus,
-   hoobank,
    // Services
    backend,
-   mobile,
-   program,
-   web,
+   // Experiences
+   // Projects
+   carshowcase,
    // Technologies
    cpp,
    css,
    expo,
    git,
+   hoobank,
    html,
    java,
    javascript,
-   php,
-   python,
+   metaversus,
+   mobile,
    nodejs,
+   php,
+   program,
+   python,
    reactjs,
    tailwind,
    threejs,
+   web,
 } from '../assets'
 
 const experiences = [
@@ -95,31 +95,9 @@ export const navLinks = [
 
 const projects = [
    {
-      name: "Crowdfunding",
+      name: "Car Showcase",
       description:
-         "Web3 platform that allows users to create and fund various user-created campaigns, providing a simple and intuitive UI for users to link their crypto-wallet.",
-      tags: [
-         {
-            name: "react",
-            color: "blue-text-gradient",
-         },
-         {
-            name: "solidity",
-            color: "green-text-gradient",
-         },
-         {
-            name: "tailwind",
-            color: "pink-text-gradient",
-         },
-      ],
-      image: crowdfunding,
-      deploy: "https://crowdfunding-tacitneptune.netlify.app/",
-      source: "https://github.com/74C17N3P7UN3/CrowdFunding/",
-   },
-   {
-      name: "Metaversus",
-      description:
-         "Web application that introduces the users to Metaversus' offers about the metaverse. Slowly animates on scroll and makes up for an engaging user-experience.",
+         "Sleek website that allows the users to search for car details and displaying its relative model. It is based on public APIs for displaying real time data.",
       tags: [
          {
             name: "react",
@@ -130,13 +108,13 @@ const projects = [
             color: "green-text-gradient",
          },
          {
-            name: "tailwind",
-            color: "pink-text-gradient",
+            name: "apis",
+            color: "orange-text-gradient",
          },
       ],
-      image: metaversus,
-      deploy: "https://metaversus-tacitneptune.netlify.app/",
-      source: "https://github.com/74C17N3P7UN3/Metaversus/",
+      image: carshowcase,
+      deploy: "https://car-showcase-tacitneptune.vercel.app/",
+      source: "https://github.com/74C17N3P7UN3/CarShowcase/",
    },
    {
       name: "HooBank",
@@ -159,6 +137,28 @@ const projects = [
       image: hoobank,
       deploy: "https://hoobank-tacitneptune.netlify.app/",
       source: "https://github.com/74C17N3P7UN3/HooBank/",
+   },
+   {
+      name: "Metaversus",
+      description:
+         "Web application that introduces the users to Metaversus' offers about the metaverse. Slowly animates on scroll and makes up for an engaging user-experience.",
+      tags: [
+         {
+            name: "react",
+            color: "blue-text-gradient",
+         },
+         {
+            name: "nextjs",
+            color: "green-text-gradient",
+         },
+         {
+            name: "tailwind",
+            color: "pink-text-gradient",
+         },
+      ],
+      image: metaversus,
+      deploy: "https://metaversus-tacitneptune.vercel.app/",
+      source: "https://github.com/74C17N3P7UN3/Metaversus/",
    },
 ]
 
@@ -243,5 +243,5 @@ export {
    projects,
    services,
    technologies,
-   testimonials,
+   testimonials
 }

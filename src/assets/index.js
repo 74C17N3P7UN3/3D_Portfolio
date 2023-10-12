@@ -24,8 +24,9 @@ import python from './tech/python.png'
 import reactjs from './tech/reactjs.png'
 import tailwind from './tech/tailwind.png'
 import threejs from './tech/threejs.png'
+import vercel from './tech/vercel.png'
 // Projects
-import crowdfunding from './projects/crowdfunding.webp'
+import carshowcase from './projects/carshowcase.webp'
 import metaversus from './projects/metaversus.webp'
 import hoobank from './projects/hoobank.webp'
 
@@ -56,8 +57,9 @@ export {
    reactjs,
    tailwind,
    threejs,
+   vercel,
    // Projects
-   crowdfunding,
+   carshowcase,
    metaversus,
    hoobank,
 }
